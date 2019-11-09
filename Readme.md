@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Горбунова](https://up.htmlacademy.ru/adaptive/18/user/659065).
-* Наставник: `Неизвестно`.
+* Наставник: Антон Попов.
 
 ---
 
