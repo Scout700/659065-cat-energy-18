@@ -1,37 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип интернет-магазина фитнес еды для котиков">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <div class="main-nav__list site-list">
-            <a class="site-list__item" href="index.html">Главная</a>
-            <a class="site-list__item" href="catalog.html">Каталог продукции</a>
-            <a class="site-list__item site-list__item--active">Подбор программы</a>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo logo" href="index.html">
+      <img class="logo__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип интернет-магазина фитнес еды для котиков">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <div class="main-nav__list site-list">
+          <a class="site-list__item" href="index.html">Главная</a>
+          <a class="site-list__item" href="catalog.html">Каталог продукции</a>
+          <a class="site-list__item site-list__item--active">Подбор программы</a>
         </div>
-      </nav>
-    </header>
-    <main class="page-main">
-
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__about-us about-us">
-        <h2 class="about-us__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="about-us__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="about-us__map-image" src="" alt="Местоположение магазина">
       </div>
-      <a class="page-footer__logo logo" href="index.html">
-        <img class="logo__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип интернет-магазина фитнес еды для котиков">
-      </a>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="page-form">
+      <header class="page-form__header">
+        <h1 class="page-form__title">Подбор программы</h1>
+        <p class="page-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </header>
+      <form class="page-form__form programm-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="programm-form__form-item">
+          <label class="programm-form__label" for="name">Имя:<sup>*</sup></label>
+          <input class="programm-form__input" type="text" id="name" name="name" value="Барсик"required>
+          <label class="programm-form__label" for="weight">Вес (кг):<sup>*</sup></label>
+          <input class="programm-form__input" type="text" id="weight" name="weight" value="7"required>
+          <label class="programm-form__label" for="ago">Возраст (лет):</label>
+          <input class="programm-form__input" type="text" id="ago" name="ago" value="7">
+        </fieldset>
+        <fieldset class="programm-form__form-item">
+          <ul class="programm-form__list">
+            <li class="programm-form__item">
+              <input class="visually-hidden programm-form__input-radio" id="losing-weight" type="radio" name="weight-radio" value="losing-weight" checked>
+              <label class="programm-form__label" for="losing-weight">Похудение</label>
+            </li>
+            <li class="programm-form__item">
+              <input class="visually-hidden programm-form__input-radio" id="set-weight" type="radio" name="weight-radio" value="set-weight">
+              <label class="programm-form__label" for="setweight">Набор массы</label>
+            </li>
+            <li class="programm-form__item">
+              <input class="visually-hidden programm-form__input-radio" id="recommendation" type="radio" name="weight-radio" value="recommendation">
+              <label class="programm-form__label" for="recommendation">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="programm-form__form-item">
+          <legend class="programm-form__legend">Контактные данные (владельца кота)</legend>
+          <label class="programm-form__label" for="email">Email:<sup>*</sup></label>
+          <input class="programm-form__input" type="email" name="email" pattern="[ A-Za-z]{4,}" placeholder="kuklachev@gmail.com" required>
+          <label class="programm-form__label" for="tel">Телефон:<sup>*</sup></label>
+          <input class="programm-form__input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90"required>
+        </fieldset>
+        <fieldset class="programm-form__form-item">
+          <legend class="programm-form__legend">Комментарий</legend>
+          <textarea class="programm-form__message" id="message" name="message" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="programm-form__form-item">
+          <legend class="programm-form__legend">Дополнительно</legend>
+          <ul class="programm-form__list">
+            <li class="programm-form__item">
+              <input class="visually-hidden programm-form__input-checkbox" id="sugar-substitute" type="checkbox" name="sugar-substitute" checked>
+              <label for="sugar-substitute">Сахарозаменитель</label>
+            </li>
+            <li class="programm-form__item">
+              <input class="visually-hidden programm-form__input-checkbox" id="drinking-watere" type="checkbox" name="drinking-water">
+              <label for="drinking-water">Питьевая вода</label>
+            </li>
+            <li class="programm-form__item">
+              <input class="visually-hidden programm-form__input-checkbox" id="milk" type="checkbox" name="milk">
+              <label for="milk">Молоко</label>
+            </li>
+            <li class="programm-form__item">
+              <input class="visually-hidden programm-form__input-checkbox" id="vitamin" type="checkbox" name="vitamin">
+              <label for="vitamin">Витамины</label>
+            </li>
+          </ul>
+          <button class="programm-form__button button--green" type="submit">Отправить заявку</button>
+          <small class="stats__legend stats__legend--bottom">
+            <sup>*</sup>&mdash;Обязательные поля
+          </small>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__about-us about-us">
+      <h2 class="about-us__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="about-us__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <img class="about-us__map-image" src="" alt="Местоположение магазина">
+    </div>
+    <a class="page-footer__logo logo" href="index.html">
+      <img class="logo__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип интернет-магазина фитнес еды для котиков">
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
@@ -50,3 +117,5 @@
       <a class="copyright__icon-link" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
     </div>
   </footer>
+</body>
+</html>
