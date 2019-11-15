@@ -10,13 +10,11 @@
       <img class="logo__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип интернет-магазина фитнес еды для котиков">
     </a>
     <nav class="main-nav">
-      <div class="main-nav__wrapper">
         <div class="main-nav__list links-list">
           <a class="links-list__item" href="index.html">Главная</a>
           <a class="links-list__item" href="catalog.html">Каталог продукции</a>
           <a class="links-list__item links-list__item--active">Подбор программы</a>
         </div>
-      </div>
     </nav>
   </header>
   <main class="main">
@@ -25,9 +23,9 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__item">
         <label class="form__label" for="name">Имя:<sup>*</sup></label>
-        <input class="form__text" type="text" id="name" name="name" value="Барсик"required>
+        <input class="form__text" type="text" id="name" name="name" value="Барсик" required>
         <label class="form__label" for="weight">Вес (кг):<sup>*</sup></label>
-        <input class="form__text" type="text" id="weight" name="weight" value="7"required>
+        <input class="form__text" type="text" id="weight" name="weight" value="7" required>
         <label class="form__label" for="ago">Возраст (лет):</label>
         <input class="form__text" type="text" id="ago" name="ago" value="7">
       </fieldset>
@@ -35,16 +33,16 @@
         <input class="visually-hidden form__radio" id="losing-weight" type="radio" name="weight-radio" value="losing-weight" checked>
         <label class="form__label" for="losing-weight">Похудение</label>
         <input class="visually-hidden form__radio" id="set-weight" type="radio" name="weight-radio" value="set-weight">
-        <label class="form__label" for="setweight">Набор массы</label>
+        <label class="form__label" for="set-weight">Набор массы</label>
         <input class="visually-hidden form__radio" id="recommendation" type="radio" name="weight-radio" value="recommendation">
         <label class="form__label" for="recommendation">Не знаю (Нужен ваш совет)</label>
       </fieldset>
       <fieldset class="form__item">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
         <label class="form__label" for="email">Email:<sup>*</sup></label>
-        <input class="form__text" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+        <input class="form__text" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
         <label class="form__label" for="tel">Телефон:<sup>*</sup></label>
-        <input class="form__text" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90"required>
+        <input class="form__text" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
       </fieldset>
       <fieldset class="form__item">
         <legend class="form__legend">Комментарий</legend>
@@ -54,7 +52,7 @@
         <legend class="form__legend">Дополнительно</legend>
         <input class="visually-hidden form__checkbox" id="sugar-substitute" type="checkbox" name="sugar-substitute" checked>
         <label class="form__label" for="sugar-substitute">Сахарозаменитель</label>
-        <input class="visually-hidden form__checkbox" id="drinking-watere" type="checkbox" name="drinking-water">
+        <input class="visually-hidden form__checkbox" id="drinking-water" type="checkbox" name="drinking-water">
         <label class="form__label" for="drinking-water">Питьевая вода</label>
         <input class="visually-hidden form__checkbox" id="milk" type="checkbox" name="milk">
         <label class="form__label" for="milk">Молоко</label>
