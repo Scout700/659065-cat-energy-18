@@ -1,0 +1,60 @@
+
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: #111111;
+}
+
+body {
+  width: 320px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: @c-dark-bluish-black;
+  font-weight: normal;
+  font-style: normal;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  display: none;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
