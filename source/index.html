@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +13,7 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__list links-list">
+      <div class="main-nav__wrapper links-list">
         <a class="links-list__item links-list__item--active">Главная</a>
         <a class="links-list__item" href="catalog.html">Каталог продукции</a>
         <a class="links-list__item" href="form.html">Подбор программы</a>
@@ -22,9 +23,9 @@
   <main class="main">
     <h1 class="visually-hidden">"Кэт-энерджи"-лучший интернет-магазин фитнес еды для котиков</h1>
     <section class="preview">
-      <h2 class="preview__title main-title">Функциональное питание для котов</h2>
-      <h4 class="preview__subtitle main-subtitle">Занялся собой? Займись котом!</h4>
-      <img class="preview__image main-image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Изображение стаканчика с фитнес едой">
+      <h2 class="preview__title">Функциональное питание для котов</h2>
+      <h4 class="preview__subtitle">Занялся собой? Займись котом!</h4>
+      <img class="preview__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Изображение стаканчика с фитнес едой">
       <a class="preview__btn btn btn--preview" href="form.html">Подобрать программу</a>
     </section>
     <section class="programms">
@@ -50,52 +51,52 @@
     </section>
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+      <div class="example__stats-list-box">
       <dl class="example__stats-list">
-        <dt class="example__stats-value">5кг</dt>
-        <dd class="example__stats-text">Снижение веса</dd>
+        <dt class="example__stats-value">5 кг</dt>
+        <dd class="example__stats-text example__stats-text--weight">Снижение веса</dd>
       </dl>
       <dl class="example__stats-list">
         <dt class="example__stats-value">60 дней</dt>
-        <dd class="example__stats-text">Затрачено времени</dd>
+        <dd class="example__stats-text example__stats-text--time">Затрачено времени</dd>
       </dl>
-      <p class="example__summary">Затраты на питание: 15 000 руб.</p>
-      <div class="example__wrapper slider">
-        <div class="example__images slider__images">
-          <img class="slider__image1" src="" width="" height="" alt="Изображение кота с большим весом">
-          <img class="slider__image2" src="" width="" height="" alt="Изображение кота с нормальным весом">
-        </div>
-        <div class="example__toggles slider__toggles">
-          <button class="slider__toggle" type="button">Было</button>
-          <button class="slider__toggle" type="button">Стало</button>
-        </div>
+    </div>
+    <p class="example__summary">Затраты на питание: 15 000 руб.</p>
+    <div class="example__wrapper slider">
+      <div class="example__images slider__images">
+        <img class="slider__image1" src="" width="" height="" alt="Изображение кота с большим весом">
+        <img class="slider__image2" src="" width="" height="" alt="Изображение кота с нормальным весом">
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-      <div class="footer__contacts contacts">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="contacts__map-image" src="https://via.placeholder.com/150x150" width="320" height="360" alt="Местоположение магазина">
+      <div class="example__toggles slider__toggles">
+        <button class="slider__toggle" type="button">Было</button>
+        <button class="slider__toggle" type="button">Стало</button>
       </div>
-      <a class="footer__logo" href="index.html">
-        <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина фитнес еды для котиков">
-      </a>
-      <ul class="footer__social social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-      </ul>
-      <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
-      </div>
-    </footer>
-  </body>
-  </html>
+    </div>
+  </section>
+  <section class="contacts contacts--on-main">
+    <div class="contacts__box">
+      <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+      <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </div>
+    <img class="contacts__map-image" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Местоположение магазина">
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__wrapper">
+    <a class="footer__logo" href="index.html">
+      <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина фитнес еды для котиков">
+    </a>
+    <div class="footer__social social-list">
+      <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+      <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+      <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+    </div>
+    <div class="footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
