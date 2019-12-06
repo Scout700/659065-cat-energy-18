@@ -2,27 +2,28 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина фитнес еды для котиков">
+  <header class="header container">
+    <a class="logo" href="index.html">
+      <img class="logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина фитнес еды для котиков">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper links-list">
-        <a class="links-list__item" href="index.html">Главная</a>
-        <a class="links-list__item links-list__item--active" href="#">Каталог продукции</a>
-        <a class="links-list__item" href="form.html">Подбор программы</a>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <a class="main-nav__item" href="index.html">Главная</a>
+        <a class="main-nav__item main-nav__item--active" href="#">Каталог продукции</a>
+        <a class="main-nav__item" href="form.html">Подбор программы</a>
       </div>
     </nav>
   </header>
-  <main class="page-main">
-    <h1 class="page-main__title">Каталог продукции</h1>
-    <section class="catalog-list catalog">
+  <main class="main">
+    <h1 class="main__title main__title--catalog">Каталог продукции</h1>
+    <section class="catalog container container--catalog">
       <article class="catalog__item article-item">
         <a class="article-item__link-image" href="#">
           <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи PRO 500 г курица">
@@ -40,230 +41,259 @@
             </tr>
             <tr>
               <th>Цена</th>
-              <td>700 р</td>
+              <td>700 Р.</td>
             </tr>
           </table>
         </div>
-      <a class="article-item__btn btn" href="#">Заказать</a>
-    </article>
-    <article class="catalog__item article-item">
-      <a class="article-item__link-image" href="#">
-        <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи PRO 1000 г курица">
-      </a>
-      <div class="article-item__box">
-        <h3><a class="article-item__link-title" href="#">Cat energy pro 1000 г</a></h3>
-        <table class="article-item__table table">
-          <tr>
-            <th>Объем</th>
-            <td>1000 г</td>
-          </tr>
-          <tr>
-            <th>Вкус</th>
-            <td>Курица</td>
-          </tr>
-          <tr>
-            <th>Цена</th>
-            <td>1000 р</td>
-          </tr>
-        </table>
+        <a class="article-item__btn btn" href="#">Заказать</a>
+      </article>
+      <article class="catalog__item article-item">
+        <a class="article-item__link-image" href="#">
+          <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи PRO 1000 г курица">
+        </a>
+        <div class="article-item__box">
+          <h3><a class="article-item__link-title" href="#">Cat energy pro 1000 г</a></h3>
+          <table class="article-item__table">
+            <tr>
+              <th>Объем</th>
+              <td>1000 г</td>
+            </tr>
+            <tr>
+              <th>Вкус</th>
+              <td>Курица</td>
+            </tr>
+            <tr>
+              <th>Цена</th>
+              <td>1000 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="article-item__btn btn" href="#">Заказать</a>
+      </article>
+      <article class="catalog__item article-item">
+        <a class="article-item__link-image" href="#">
+          <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи PRO 500 г рыба">
+        </a>
+        <div class="article-item__box">
+          <h3><a class="article-item__link-title" href="#">Cat energy pro 500 г</a></h3>
+          <table class="article-item__table">
+            <tr>
+              <th>Объем</th>
+              <td>500 г</td>
+            </tr>
+            <tr>
+              <th>Вкус</th>
+              <td>Рыба</td>
+            </tr>
+            <tr>
+              <th>Цена</th>
+              <td>700 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="article-item__btn btn" href="#">Заказать</a>
+      </article>
+      <article class="catalog-item article-item">
+        <a class="article-item__link-image" href="#">
+          <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи PRO 1000 г рыба">
+        </a>
+        <div class="article-item__box">
+          <h3><a class="article-item__link-title" href="#">Cat energy pro 1000 г</a></h3>
+          <table class="article-item__table">
+            <tr>
+              <th>Объем</th>
+              <td>1000 г</td>
+            </tr>
+            <tr>
+              <th>Вкус</th>
+              <td>Рыба</td>
+            </tr>
+            <tr>
+              <th>Цена</th>
+              <td>1000 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="article-item__btn btn" href="#">Заказать</a>
+      </article>
+      <article class="catalog__item article-item">
+        <a class="article-item__link-image" href="#">
+          <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи SLIM 500 г гречка">
+        </a>
+        <div class="article-item__box">
+          <h3><a class="article-item__link-title" href="#">Cat energy slim 500 г</a></h3>
+          <table class="article-item__table">
+            <tr>
+              <th>Объем</th>
+              <td>500 г</td>
+            </tr>
+            <tr>
+              <th>Вкус</th>
+              <td>Гречка</td>
+            </tr>
+            <tr>
+              <th>Цена</th>
+              <td>700 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="article-item__btn btn" href="#">Заказать</a>
+      </article>
+      <article class="catalog-item article-item">
+        <a class="article-item__link-image" href="#">
+          <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи SLIM 1000 г гречка">
+        </a>
+        <div class="article-item__box">
+          <h3><a class="article-item__link-title" href="#">Cat energy slim 1000 г</a></h3>
+          <table class="article-item__table">
+            <tr>
+              <th>Объем</th>
+              <td>1000 г</td>
+            </tr>
+            <tr>
+              <th>Вкус</th>
+              <td>Гречка</td>
+            </tr>
+            <tr>
+              <th>Цена</th>
+              <td>1000 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="article-item__btn btn" href="#">Заказать</a>
+      </article>
+      <article class="catalog__item article-item">
+        <a class="article-item__link-image" href="#">
+          <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи PRO 500 г рис">
+        </a>
+        <div class="article-item__box">
+          <h3><a class="article-item__link-title" href="#">Cat energy pro 500 г</a></h3>
+          <table class="article-item__table">
+            <tr>
+              <th>Объем</th>
+              <td>500 г</td>
+            </tr>
+            <tr>
+              <th>Вкус</th>
+              <td>Рис</td>
+            </tr>
+            <tr>
+              <th>Цена</th>
+              <td>500 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="article-item__btn btn" href="#">Заказать</a>
+      </article>
+      <article class="catalog__item  article-item article-item--everything">
+        <h3 class="article-item__link-title article-item__link-title--everything">Показать еще 100500 товаров</h3>
+        <p class="article-item__text">На самом деле вкусов гораздо больше!</p>
+        <a class="article-item__btn btn btn--show" href="#">Показать все</a>
+      </article>
+    </section>
+    <h2 class="main__title-additional"><span class="main__text">Дополнительные товары</span></h2>
+    <div class="container container--wrapper">
+      <section class="additional-goods">
+        <article class="additional-goods__item">
+          <div class="additional-goods__box">
+            <a class="additional-goods__link" href="#">
+              <h3 class="additional-goods__title">Сахарозаменитель</h3>
+            </a>
+            <table class="additional-goods__table">
+              <tr>
+                <th>1 упаковка (100 г)</th>
+                <td>200 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="additional-goods__btn btn" href="#">Заказать</a>
+        </article>
+        <article class="additional-goods__item">
+          <div class="additional-goods__box">
+            <a class="additional-goods__link" href="#">
+              <h3 class="additional-goods__title">Питьевая вода</h3>
+            </a>
+            <table class="additional-goods__table">
+              <tr>
+                <th>5 литров</th>
+                <td>50 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="additional-goods__btn btn" href="#">Заказать</a>
+        </article>
+        <article class="additional-goods__item">
+          <div class="additional-goods__box">
+            <a class="additional-goods__link" href="#">
+              <h3 class="additional-goods__title">Молоко</h3>
+            </a>
+            <table class="additional-goods__table">
+              <tr>
+                <th>1 литр</th>
+                <td>100 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="additional-goods__btn btn" href="#">Заказать</a>
+        </article>
+        <article class="additional-goods__item">
+          <div class="additional-goods__box">
+            <a class="additional-goods__link" href="#">
+              <h3 class="additional-goods__title">Витамины</h3>
+            </a>
+            <table class="additional-goods__table">
+              <tr>
+                <th>1 упаковка (30 г)</th>
+                <td>300 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="additional-goods__btn btn" href="#">Заказать</a>
+        </article>
+      </section>
+      <div class="advertising-action">
+        <p class="advertising-action__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
       </div>
-      <a class="article-item__btn btn" href="#">Заказать</a>
-    </article>
-    <article class="catalog__item article-item">
-      <a class="article-item__link-image" href="#">
-        <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи PRO 500 г рыба">
-      </a>
-      <div class="article-item__box">
-        <h3><a class="article-item__link-title" href="#">Cat energy pro 500 г</a></h3>
-        <table class="article-item__table table">
-          <tr>
-            <th>Объем</th>
-            <td>500 г</td>
-          </tr>
-          <tr>
-            <th>Вкус</th>
-            <td>Рыба</td>
-          </tr>
-          <tr>
-            <th>Цена</th>
-            <td>700 р</td>
-          </tr>
-        </table>
-      </div>
-      <a class="article-item__btn btn" href="#">Заказать</a>
-    </article>
-    <article class="catalog__item article-item">
-      <a class="article-item__link-image" href="#">
-        <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи PRO 1000 г рыба">
-
-      </a>
-      <div class="article-item__box">
-        <h3><a class="article-item__link-title" href="#">Cat energy pro 1000 г</a></h3>
-        <table class="article-item__table table">
-          <tr>
-            <th>Объем</th>
-            <td>1000 г</td>
-          </tr>
-          <tr>
-            <th>Вкус</th>
-            <td>Рыба</td>
-          </tr>
-          <tr>
-            <th>Цена</th>
-            <td>1000 р</td>
-          </tr>
-        </table>
-      </div>
-      <a class="article-item__btn btn" href="#">Заказать</a>
-    </article>
-    <article class="catalog__item article-item">
-      <a class="article-item__link-image" href="#">
-        <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи SLIM 500 г гречка">
-      </a>
-      <div class="article-item__box">
-        <h3><a class="article-item__link-title" href="#">Cat energy slim 500 г</a></h3>
-        <table class="article-item__table table">
-          <tr>
-            <th>Объем</th>
-            <td>500 г</td>
-          </tr>
-          <tr>
-            <th>Вкус</th>
-            <td>Гречка</td>
-          </tr>
-          <tr>
-            <th>Цена</th>
-            <td>700 р</td>
-          </tr>
-        </table>
-      </div>
-      <a class="article-item__btn btn" href="#">Заказать</a>
-    </article>
-    <article class="catalog__item article-item">
-      <a class="article-item__link-image" href="#">
-        <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи SLIM 1000 г гречка">
-      </a>
-      <div class="article-item__box">
-        <h3><a class="article-item__link-title" href="#">Cat energy slim 1000 г</a></h3>
-        <table class="article-item__table table">
-          <tr>
-            <th>Объем</th>
-            <td>1000 г</td>
-          </tr>
-          <tr>
-            <th>Вкус</th>
-            <td>Гречка</td>
-          </tr>
-          <tr>
-            <th>Цена</th>
-            <td>1000 р</td>
-          </tr>
-        </table>
-      </div>
-      <a class="article-item__btn btn" href="#">Заказать</a>
-    </article>
-    <article class="catalog__item article-item">
-      <a class="article-item__link-image" href="#">
-        <img class="article-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Фитнес еда Кэт-энерджи SLIM 500 г рис">
-      </a>
-      <div class="article-item__box">
-        <h3><a class="article-item__link-title" href="#">Cat energy slim 500 г</a></h3>
-        <table class="article-item__table table">
-          <tr>
-            <th>Объем</th>
-            <td>500 г</td>
-          </tr>
-          <tr>
-            <th>Вкус</th>
-            <td>Рис</td>
-          </tr>
-          <tr>
-            <th>Цена</th>
-            <td>700 р</td>
-          </tr>
-        </table>
-      </div>
-      <a class="article-item__btn btn" href="#">Заказать</a>
-    </article>
-    <article class="catalog__item article-item">
-      <h3 class="article-item__link-title article-item__link-title--everything">Показать еще 100500 товаров</h3>
-      <h4 class="article-item__product-small-title">На самом деле вкусов гораздо больше!</h4>
-      <a class="article-item__btn btn btn--show" href="#">Показать все</a>
-    </article>
-    <h2 class="catalog__catalog-title">Дополнительные товары</h2>
-    <article class="catalog__item article-item">
-      <div class="article-item__box article-item__box--add">
-        <h3><a class="article-item__link-title" href="#">Сахарозаменитель</a></h3>
-        <table class="article-item__table">
-          <tr>
-            <th>1 упаковка (100 г)</th>
-            <td>200 р.</td>
-          </tr>
-        </table>
-      </div>
-      <a class="article-item__btn btn" href="#">Заказать</a>
-    </article>
-    <article class="catalog__item article-item">
-      <div class="article-item__box article-item__box--add">
-        <h3><a class="article-item__link-title" href="#">Питьевая вода</a></h3>
-        <table class="article-item__table">
-          <tr>
-            <th>5 литров</th>
-            <td>50 р.</td>
-          </tr>
-        </table>
-      </div>
-      <a class="article-item__btn btn" href="#">Заказать</a>
-    </article>
-    <article class="catalog__item article-item">
-      <div class="article-item__box article-item__box--add">
-        <h3><a class="article-item__link-title" href="#">Молоко</a></h3>
-        <table class="article-item__table">
-          <tr>
-            <th>1 литр</th>
-            <td>100 р.</td>
-          </tr>
-        </table>
-      </div>
-      <a class="article-item__btn btn" href="#">Заказать</a>
-    </article>
-    <article class="catalog__item article-item">
-      <div class="article-item__box article-item__box--add">
-        <h3><a class="article-item__link-title" href="#">Витамины</a></h3>
-        <table class="article-item__table">
-          <tr>
-            <th>1 упаковка (30 г)</th>
-            <td>300 р.</td>
-          </tr>
-        </table>
-      </div>
-      <a class="article-item__btn btn" href="#">Заказать</a>
-    </article>
-  </section>
-  <div class="advertising-action">
-    <p class="advertising-action__text">Закажите все и получите чехол для кота в подарок!</p>
-  </div>
-  <section class="contacts">
-    <div class="contacts__box">
-      <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-      <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
-    <img class="contacts__map-image" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Местоположение магазина">
-  </section>
-</main>
-<footer class="footer">
-  <a class="footer__logo" href="index.html">
-    <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина фитнес еды для котиков">
-  </a>
-  <div class="footer__social social-list">
-    <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-    <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-    <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-  </div>
-  <div class="footer__copyright copyright">
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
-  </div>
-</footer>
+    <section class="contacts">
+      <div class="container container--contacts">
+        <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+      </div>
+      <div class="contacts__map-image"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container container--footer">
+      <a class="footer__logo" href="index.html">
+        <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина фитнес еды для котиков">
+      </a>
+      <div class="footer__social social-list">
+        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      </div>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 </html>
