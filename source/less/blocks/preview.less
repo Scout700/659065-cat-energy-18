@@ -13,6 +13,21 @@
   }
 }
 
+.preview__wrapper {
+  min-height: 480px;
+  padding-top: 26px;
+  background-image: url("../img/index-can-mobile@1x.png"),
+    url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 20px 164px, 0 0;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"),
+      url("../img/index-background-mobile@2x.jpg");
+    background-size: 280px auto, 320px auto;
+  }
+}
+
 .preview__title {
   margin-bottom: 22px;
   font-size: 36px;
@@ -30,17 +45,25 @@
   color: #ffffff;
 }
 
-.preview__btn {
-  width: 280px;
-  font-size: 14px;
-}
-
 @media (min-width: @tablet-width) {
   .preview {
     margin-bottom: 8px;
 
     &::before {
       background-color: transparent;
+    }
+  }
+
+  .preview__wrapper {
+    min-height: 830px;
+    padding-top: 20px;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 26px 228px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 709px auto;
     }
   }
 
@@ -52,7 +75,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    color: @c-black;
+    color: @color-black;
   }
 
   .preview__subtitle {
@@ -61,24 +84,26 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    color: @c-black;
-  }
-
-  .preview__btn {
-    width: 245px;
-    padding-top: 17px;
-    padding-right: 18px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    font-size: 20px;
-    line-height: 20px;
-    margin-left: 90px;
+    color: @color-black;
   }
 }
 
 @media (min-width: @desktop-width) {
   .preview {
     margin-bottom: 86px;
+  }
+
+  .preview__wrapper {
+    min-height: 570px;
+    padding-left: 107px;
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 489px 17px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png");
+      background-size: 552px auto;
+    }
   }
 
   .preview__title {
@@ -92,9 +117,5 @@
   .preview__subtitle {
     margin-bottom: 52px;
     padding-left: 12px;
-  }
-
-  .preview__btn {
-    margin-left: 16px;
   }
 }

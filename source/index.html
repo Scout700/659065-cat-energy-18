@@ -4,30 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="index">
   <header class="header container">
     <a class="logo" href="index.html">
-      <img class="logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина фитнес еды для котиков">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина фитнес еды для котиков">
+      </picture>
     </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <a class="main-nav__item main-nav__item--active">Главная</a>
-        <a class="main-nav__item" href="catalog.html">Каталог продукции</a>
-        <a class="main-nav__item" href="form.html">Подбор программы</a>
+        <a class="main-nav__item main-nav__item--index main-nav__item--active">Главная</a>
+        <a class="main-nav__item main-nav__item--index" href="catalog.html">Каталог продукции</a>
+        <a class="main-nav__item main-nav__item--index" href="form.html">Подбор программы</a>
       </div>
     </nav>
   </header>
   <main class="main">
     <h1 class="visually-hidden">"Кэт-энерджи"-лучший интернет-магазин фитнес еды для котиков</h1>
     <section class="preview">
-      <div class="container container--preview">
+      <div class="preview__wrapper container">
         <h2 class="preview__title">Функциональное питание для котов</h2>
         <h4 class="preview__subtitle">Занялся собой? Займись котом!</h4>
-        <a class="preview__btn btn" href="form.html">Подобрать программу</a>
+        <a class="btn btn--preview" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="programms container">
@@ -76,8 +79,8 @@
         </div>
       </div>
     </section>
-    <section class="contacts contacts--on-main">
-      <div class="container container--contacts">
+    <section class="contacts">
+      <div class="contacts__wrapper container">
         <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
       </div>
@@ -85,36 +88,22 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container container--footer">
-      <a class="footer__logo" href="index.html">
-        <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина фитнес еды для котиков">
+    <div class="footer__wrapper container">
+      <a class="logo logo--footer" href="index.html">
+        <img class="logo__image-footer" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина фитнес еды для котиков">
       </a>
-      <div class="footer__social social-list">
-        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      <div class="social-list">
+        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy"><span>Мы в Вконтакте</span><svg class="social-list__icon" width="22" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg></a>
+        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy"><span>Мы в Инстаграме</span><svg class="social-list__icon" width="17" height="17"><use xlink:href="img/sprite.svg#icon-insta"></use></svg></a>
+        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy"><span>Мы в Фейсбуке</span><svg class="social-list__icon" width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg></a>
       </div>
-      <div class="footer__copyright copyright">
+      <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>Логотип HTML Academy</span><svg class="copyright__icon" width="60" height="60"><use xlink:href="img/sprite.svg#htmlacademy"></use></svg>
+        </a>
       </div>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+  <script src="js/navmenu.js"></script>
 </body>
 </html>
