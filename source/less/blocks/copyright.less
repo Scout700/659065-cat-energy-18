@@ -1,0 +1,36 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+}
+
+.copyright__link {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  color: @color-dark-bluish-black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  span {
+    display: none;
+  }
+}
+
+.copyright__icon {
+  position: absolute;
+  top: -3px;
+  right: -4px;
+  width: 40px;
+  height: 40px;
+
+  fill: #666666;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}

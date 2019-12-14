@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 *,
 *::before,
 ::after {
@@ -26,7 +30,7 @@ h4 {
 
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  color: @c-black;
+  color: @color-black;
 }
 
 body {
@@ -34,24 +38,21 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial", sans-serif;
-  color: @c-dark-bluish-black;
+  color: @color-dark-bluish-black;
   font-weight: normal;
   font-style: normal;
 
   background-color: #ffffff;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-
-  display: none;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-
   border: 0;
-
+  padding: 0;
+  height: 0;
+  width: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
