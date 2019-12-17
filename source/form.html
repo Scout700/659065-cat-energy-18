@@ -5,10 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Подбор программы</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="header container">
     <a class="logo" href="index.html">
       <picture>
@@ -44,7 +47,7 @@
                 <input class="form__text" type="number" id="weight" name="weight" placeholder="7" required>
               </div>
               <div class="form__wrapper">
-                <label class="form__label form__label--user" for="ago">Возраст (лет):</label>
+                <label class="form__label form__label--user" for="ago">Возраст&nbsp;(лет):</label>
                 <input class="form__text" type="number" id="ago" name="ago" placeholder="7">
               </div>
             </div>
@@ -141,6 +144,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=a3f13a38-e5f4-494a-ab7c-fe5b4e4e3a91&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/svgxuse.js" defer></script>
+  <script src="js/picturefill.min.js"></script>
   <script src="js/navmenu.js"></script>
 </body>
 

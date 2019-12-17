@@ -9,8 +9,8 @@
   flex-direction: column;
 
   width: 280px;
-  padding-top: 14px;
-  padding-bottom: 17px;
+  padding-top: 12px;
+  padding-bottom: 20px;
   border-bottom: 1px solid @gray;
 
   &:first-child {
@@ -25,7 +25,7 @@
 .additional-goods__link {
   display: block;
   padding-left: 2px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .additional-goods__title {
@@ -39,8 +39,6 @@
 .additional-goods__table {
   width: 280px;
   border-collapse: collapse;
-  padding: 0;
-  border: none;
 }
 
 .additional-goods__table tr {
@@ -48,24 +46,24 @@
   justify-content: space-between;
 }
 
-.additional-goods__table th {
+.additional-goods__table th,
+.additional-goods__table td {
+  width: 140px;
   font-size: 14px;
   line-height: 14px;
   font-weight: normal;
+}
+
+.additional-goods__table th {
   text-align: left;
 }
 
 .additional-goods__table td {
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: normal;
   text-align: right;
 }
 
 @media (min-width: @tablet-width) {
   .additional-goods {
-    display: flex;
-    flex-direction: column;
     margin-right: auto;
     margin-bottom: 69px;
     margin-left: auto;
@@ -73,10 +71,11 @@
 
   .additional-goods__item {
     width: 708px;
-    padding-top: 28px;
+    padding-top: 25px;
     padding-right: 38px;
-    padding-bottom: 28px;
+    padding-bottom: 26px;
     padding-left: 37px;
+    margin-bottom: -1px;
 
     border: 1px solid @gray;
   }
@@ -85,11 +84,11 @@
     display: flex;
     justify-content: space-between;
     width: 633px;
-    margin-bottom: 14px;
+    margin-bottom: 25px;
   }
 
   .additional-goods__link {
-    align-self: baseline;
+    align-self: center;
     width: 300px;
     padding-left: 0;
     margin-bottom: 0;
@@ -101,49 +100,48 @@
   }
 
   .additional-goods__table {
-    align-self: baseline;
+    align-self: center;
     width: 333px;
   }
 
   .additional-goods__table tr {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+  }
+
+  .additional-goods__table th,
+  .additional-goods__table td {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    text-align: right;
   }
 
   .additional-goods__table th {
     flex-grow: 1;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
-    text-align: right;
   }
 
   .additional-goods__table td {
     width: 95px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
-    text-align: right;
-  }
-
-  .additional-goods__btn {
-    width: 633px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .additional-goods {
     margin-bottom: 85px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .additional-goods__item {
     flex-direction: row;
     justify-content: space-between;
-    width: 975px;
-    padding-top: 16px;
-    padding-right: 80px;
+    width: 895px;
+    padding-top: 15px;
+    padding-right: 0;
     padding-bottom: 16px;
     padding-left: 0;
+    margin-bottom: 0;
     border: none;
     border-bottom: 1px solid @gray;
 
@@ -161,8 +159,6 @@
   }
 
   .additional-goods__link {
-    display: block;
-    align-self: center;
     width: 325px;
     margin: 0;
   }
@@ -181,24 +177,16 @@
     justify-content: flex-end;
   }
 
-  .additional-goods__table th {
-    width: 50%;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
+  .additional-goods__table th,
+  .additional-goods__table td {
     text-align: left;
+  }
+
+  .additional-goods__table th {
+    width: 245px;
   }
 
   .additional-goods__table td {
-    width: 50%;
-    padding-left: 80px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
-    text-align: left;
-  }
-
-  .additional-goods__btn {
-    width: 245px;
+    width: 79px;
   }
 }
