@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
+
 <body class="index">
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="header container">
     <a class="logo" href="index.html">
       <picture>
         <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина фитнес еды для котиков">
+        <img class="logo__image" src="img/logo-mobile.svg" width="191" height="39"
+          alt="Логотип интернет-магазина фитнес еды для котиков">
       </picture>
     </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -36,74 +42,136 @@
     <section class="programms container">
       <div class="programms__item">
         <h3 class="programms__title programms__title--slim">Похудение</h3>
-        <p class="programms__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="programms__link" href="catalog/.html" >Каталог slim</a>
+        <p class="programms__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
+          диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a class="programms__link" href="catalog/.html">Каталог slim</a>
       </div>
       <div class="programms__item">
         <h3 class="programms__title programms__title--pro">Набор массы</h3>
-        <p class="programms__text programms__text--second">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <p class="programms__text programms__text--second">Заработать авторитет среди дворовых котов и&nbsp;даже собак?
+          Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="programms__link" href="catalog/.html">Каталог pro</a>
       </div>
     </section>
     <section class="description container">
       <h2 class="description__title">Как это работает</h2>
       <ul class="description__list">
-        <li class="description__item  description__item--usefully">Функциональное питание содержит только полезные питательные вещества.</li>
-        <li class="description__item  description__item--quickly">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-        <li class="description__item  description__item--functionally">Замените один-два приема обычной еды на наше функциональное питание.</li>
-        <li class="description__item  description__item--result">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</li>
+        <li class="description__item  description__item--usefully">Функциональное питание содержит только полезные
+          питательные вещества.</li>
+        <li class="description__item  description__item--quickly">Выпускается в виде порошка, который нужно лишь залить
+          кипятком и готово.</li>
+        <li class="description__item  description__item--functionally">Замените один-два приема обычной еды на наше
+          функциональное питание.</li>
+        <li class="description__item  description__item--result">Уже через месяц наслаждайтесь изменениями к лучшему
+          вашего&nbsp;питомца!</li>
       </ul>
     </section>
     <section class="example">
-      <div class="container">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__stats-list-box">
-          <dl class="example__stats-list">
-            <dt class="example__stats-value">5 кг</dt>
-            <dd class="example__stats-text example__stats-text--weight">Снижение веса</dd>
-          </dl>
-          <dl class="example__stats-list">
-            <dt class="example__stats-value">60 дней</dt>
-            <dd class="example__stats-text example__stats-text--time">Затрачено времени</dd>
-          </dl>
+      <div class="container container--not-padding">
+        <div class="example__wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+            Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+            по-прежнему спит по 16 часов в день.</p>
+          <div class="example__stats-list-box">
+            <dl class="example__stats-list">
+              <dt class="example__stats-value">5 кг</dt>
+              <dd class="example__stats-text example__stats-text--weight">Снижение веса</dd>
+            </dl>
+            <dl class="example__stats-list">
+              <dt class="example__stats-value">60 дней</dt>
+              <dd class="example__stats-text example__stats-text--time">Затрачено времени</dd>
+            </dl>
+            <p class="example__summary">Затраты на питание: <span class="example__cash">15 000 руб.</span></p>
+          </div>
         </div>
-        <p class="example__summary">Затраты на питание: <span class="example__cash">15 000 руб.</span></p>
-        <div class="example__slider">
-          <div class="example__images slider__images">
+        <div class="example__slider slider">
+          <div class="slider__inner">
+            <div class="slider__slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/content/before-desktop@1x.webp 1x, img/content/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/before-tablet@1x.webp 1x, img/content/before-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/before-mobile@1x.webp 1x, img/content/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)"
+                  srcset="img/content/before-desktop@1x.png 1x, img/content/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/before-tablet@1x.png 1x, img/content/before-tablet@2x.png 2x">
+                <img class="slider__image" src="img/content/before-mobile@1x.png"
+                  srcset="img/content/before-mobile@2x.png 2x" alt="Изображение кота до похудения">
+              </picture>
+            </div>
+            <div class="slider__slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/content/after-desktop@1x.webp 1x, img/content/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/after-tablet@1x.webp 1x, img/content/after-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/after-mobile@1x.webp 1x, img/content/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)"
+                  srcset="img/content/after-desktop@1x.png 1x, img/content/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/after-tablet@1x.png 1x, img/content/after-tablet@2x.png 2x">
+                <img class="slider__image" src="img/content/after-mobile@1x.png"
+                  srcset="img/content/after-mobile@2x.png 2x" alt="Изображение кота после похудения">
+              </picture>
+            </div>
           </div>
-          <div class="example__toggles slider__toggles">
-            <button class="slider__toggle" type="button">Было</button>
-            <button class="slider__toggle" type="button">Стало</button>
+          <div class="slider__slider-label">
+            <a class="slider__link">Было</a>
+            <a class="slider__link">Стало</a>
           </div>
+          <div class="slider__toggle"></div>
         </div>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper container">
         <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span>
+        </p>
       </div>
-      <div class="contacts__map-image"></div>
+      <div class="contacts__map-image" id="map"></div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
       <a class="logo logo--footer" href="index.html">
-        <img class="logo__image-footer" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина фитнес еды для котиков">
+        <img class="logo__image-footer" src="img/logo-footer.svg" width="128" height="24"
+          alt="Логотип интернет-магазина фитнес еды для котиков">
       </a>
       <div class="social-list">
-        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy"><span>Мы в Вконтакте</span><svg class="social-list__icon" width="22" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg></a>
-        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy"><span>Мы в Инстаграме</span><svg class="social-list__icon" width="17" height="17"><use xlink:href="img/sprite.svg#icon-insta"></use></svg></a>
-        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy"><span>Мы в Фейсбуке</span><svg class="social-list__icon" width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg></a>
+        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Мы в
+          Вконтакте<span><svg class="social-list__icon" width="22" height="12">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg></span></a>
+        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+          Инстаграме><span><svg class="social-list__icon" width="17" height="17">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg></span></a>
+        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+          Фейсбуке><span><svg class="social-list__icon" width="10" height="19">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg></span></a>
       </div>
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>Логотип HTML Academy</span><svg class="copyright__icon" width="60" height="60"><use xlink:href="img/sprite.svg#htmlacademy"></use></svg>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy<span><svg
+              class="copyright__icon" width="60" height="60">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg></span>
         </a>
       </div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=a3f13a38-e5f4-494a-ab7c-fe5b4e4e3a91&lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="js/svgxuse.js" defer></script>
+  <script src="js/picturefill.min.js"></script>
   <script src="js/navmenu.js"></script>
 </body>
+
 </html>

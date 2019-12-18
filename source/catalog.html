@@ -5,10 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Каталог продукции</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="header container">
     <a class="logo" href="index.html">
       <picture>
@@ -33,12 +36,18 @@
       <article class="catalog__item article-item">
         <a class="article-item__link-image" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/content/chicken-small-desktop@1x.webp 1x, img/content/chicken-small-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/chicken-small-tablet@1x.webp 1x, img/content/chicken-small-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/chicken-small-mobile@1x.webp 1x, img/content/chicken-small-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)"
-              srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+              srcset="img/content/chicken-small-desktop@1x.png 1x, img/content/chicken-small-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
-              srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-            <img class="article-item__image" src="img/chicken-small-mobile@1x.jpg"
-              srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Фитнес еда Кэт-энерджи PRO 500 г курица">
+              srcset="img/content/chicken-small-tablet@1x.png 1x, img/content/chicken-small-tablet@2x.png 2x">
+            <img class="article-item__image" src="img/content/chicken-small-mobile@1x.jpg"
+              srcset="img/content/chicken-small-mobile@2x.jpg 2x" alt="Фитнес еда Кэт-энерджи PRO 500 г курица">
           </picture>
         </a>
         <div class="article-item__box">
@@ -63,12 +72,18 @@
       <article class="catalog__item article-item">
         <a class="article-item__link-image" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/content/chicken-big-desktop@1x.webp 1x, img/content/chicken-big-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/chicken-big-tablet@1x.webp 1x, img/content/chicken-big-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/chicken-big-mobile@1x.webp 1x, img/content/chicken-big-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)"
-              srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+              srcset="img/content/chicken-big-desktop@1x.png 1x, img/content/chicken-big-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
-              srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-            <img class="article-item__image" src="img/chicken-big-mobile@1x.jpg"
-              srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Фитнес еда Кэт-энерджи PRO 1000 г курица">
+              srcset="img/content/chicken-big-tablet@1x.png 1x, img/content/chicken-big-tablet@2x.png 2x">
+            <img class="article-item__image" src="img/content/chicken-big-mobile@1x.jpg"
+              srcset="img/content/chicken-big-mobile@2x.jpg 2x" alt="Фитнес еда Кэт-энерджи PRO 1000 г курица">
           </picture>
         </a>
         <div class="article-item__box">
@@ -93,12 +108,18 @@
       <article class="catalog__item article-item">
         <a class="article-item__link-image" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/content/fish-small-desktop@1x.webp 1x, img/content/fish-small-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/fish-small-tablet@1x.webp 1x, img/content/fish-small-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/fish-small-mobile@1x.webp 1x, img/content/fish-small-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)"
-              srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+              srcset="img/content/fish-small-desktop@1x.png 1x, img/content/fish-small-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
-              srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-            <img class="article-item__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x"
-              alt="Фитнес еда Кэт-энерджи PRO 500 г рыба">
+              srcset="img/content/fish-small-tablet@1x.png 1x, img/content/fish-small-tablet@2x.png 2x">
+            <img class="article-item__image" src="img/content/fish-small-mobile@1x.jpg"
+              srcset="img/content/fish-small-mobile@2x.jpg 2x" alt="Фитнес еда Кэт-энерджи PRO 500 г рыба">
           </picture>
         </a>
         <div class="article-item__box">
@@ -123,10 +144,18 @@
       <article class="catalog-item article-item">
         <a class="article-item__link-image" href="#">
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
-            <img class="article-item__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x"
-              alt="Фитнес еда Кэт-энерджи PRO 1000 г рыба">
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/content/fish-big-desktop@1x.webp 1x, img/content/fish-big-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/fish-big-tablet@1x.webp 1x, img/content/fish-big-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/fish-big-mobile@1x.webp 1x, img/content/fish-big-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)"
+              srcset="img/content/fish-big-desktop@1x.png 1x, img/content/fish-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/content/fish-big-tablet@1x.png 1x, img/content/fish-big-tablet@2x.png 2x">
+            <img class="article-item__image" src="img/content/fish-big-mobile@1x.jpg"
+              srcset="img/content/fish-big-mobile@2x.jpg 2x" alt="Фитнес еда Кэт-энерджи PRO 1000 г рыба">
           </picture>
         </a>
         <div class="article-item__box">
@@ -151,12 +180,18 @@
       <article class="catalog__item article-item">
         <a class="article-item__link-image" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/content/buckwheat-small-desktop@1x.webp 1x, img/content/buckwheat-small-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/buckwheat-small-tablet@1x.webp 1x, img/content/buckwheat-small-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/buckwheat-small-mobile@1x.webp 1x, img/content/buckwheat-small-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)"
-              srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+              srcset="img/content/buckwheat-small-desktop@1x.png 1x, img/content/buckwheat-small-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
-              srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-            <img class="article-item__image" src="img/buckwheat-small-mobile@1x.jpg"
-              srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Фитнес еда Кэт-энерджи SLIM 500 г гречка">
+              srcset="img/content/buckwheat-small-tablet@1x.png 1x, img/content/buckwheat-small-tablet@2x.png 2x">
+            <img class="article-item__image" src="img/content/buckwheat-small-mobile@1x.jpg"
+              srcset="img/content/buckwheat-small-mobile@2x.jpg 2x" alt="Фитнес еда Кэт-энерджи SLIM 500 г гречка">
           </picture>
         </a>
         <div class="article-item__box">
@@ -181,12 +216,18 @@
       <article class="catalog-item article-item">
         <a class="article-item__link-image" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/content/buckwheat-big-desktop@1x.webp 1x, img/content/buckwheat-big-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/buckwheat-big-tablet@1x.webp 1x, img/content/buckwheat-big-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/buckwheat-big-mobile@1x.webp 1x, img/content/buckwheat-big-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)"
-              srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              srcset="img/content/buckwheat-big-desktop@1x.png 1x, img/content/buckwheat-big-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
-              srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-            <img class="article-item__image" src="img/buckwheat-big-mobile@1x.jpg"
-              srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Фитнес еда Кэт-энерджи SLIM 1000 г гречка">
+              srcset="img/content/buckwheat-big-tablet@1x.png 1x, img/content/buckwheat-big-tablet@2x.png 2x">
+            <img class="article-item__image" src="img/content/buckwheat-big-mobile@1x.jpg"
+              srcset="img/content/buckwheat-big-mobile@2x.jpg 2x" alt="Фитнес еда Кэт-энерджи SLIM 1000 г гречка">
           </picture>
         </a>
         <div class="article-item__box">
@@ -211,12 +252,18 @@
       <article class="catalog__item article-item">
         <a class="article-item__link-image" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/content/rice-small-desktop@1x.webp 1x, img/content/rice-small-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/rice-small-tablet@1x.webp 1x, img/content/rice-small-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/rice-small-mobile@1x.webp 1x, img/content/rice-small-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)"
-              srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+              srcset="img/content/rice-small-desktop@1x.png 1x, img/content/rice-small-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
-              srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-            <img class="article-item__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x"
-              alt="Фитнес еда Кэт-энерджи SLIM 500 г рис">
+              srcset="img/content/rice-small-tablet@1x.png 1x, img/content/rice-small-tablet@2x.png 2x">
+            <img class="article-item__image" src="img/content/rice-small-mobile@1x.jpg"
+              srcset="img/content/rice-small-mobile@2x.jpg 2x" alt="Фитнес еда Кэт-энерджи SLIM 500 г рис">
           </picture>
         </a>
         <div class="article-item__box">
@@ -292,12 +339,15 @@
         <article class="additional-goods__item">
           <div class="additional-goods__box">
             <a class="additional-goods__link" href="#">
-              <h3 class="additional-goods__title">Витамины</h3>
+              <h3 class="additional-goods__title">Витамины
+              </h3>
             </a>
             <table class="additional-goods__table">
               <tr>
-                <th>1 упаковка (30 г)</th>
-                <td>300 Р.</td>
+                <th>1 упаковка (30 г)
+                </th>
+                <td>300 Р.
+                </td>
               </tr>
             </table>
           </div>
@@ -314,7 +364,7 @@
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span>
         </p>
       </div>
-      <div class="contacts__map-image">Карта</div>
+      <div class="contacts__map-image" id="map">Карта</div>
     </section>
   </main>
   <footer class="footer">
@@ -324,19 +374,33 @@
           alt="Логотип интернет-магазина фитнес еды для котиков">
       </a>
       <div class="social-list">
-        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-          Инстаграме</a>
-        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
-          Фейсбуке</a>
+        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy"><span>Мы в
+            Вконтакте</span><svg class="social-list__icon" width="22" height="12">
+            <use xlink:href="img/sprite.svg#icon-vk"></use>
+          </svg></a>
+        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy"><span>Мы
+            в Инстаграме</span><svg class="social-list__icon" width="17" height="17">
+            <use xlink:href="img/sprite.svg#icon-insta"></use>
+          </svg></a>
+        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy"><span>Мы в
+            Фейсбуке</span><svg class="social-list__icon" width="10" height="19">
+            <use xlink:href="img/sprite.svg#icon-fb"></use>
+          </svg></a>
       </div>
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML
-          Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>Логотип HTML
+            Academy</span><svg class="copyright__icon" width="60" height="60">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=a3f13a38-e5f4-494a-ab7c-fe5b4e4e3a91&lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="js/svgxuse.js" defer></script>
+  <script src="js/picturefill.min.js"></script>
   <script src="js/navmenu.js"></script>
 </body>
 

@@ -1,7 +1,11 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  padding-top: 22px;
+  padding-top: 27px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
@@ -12,8 +16,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-  span {
-    display: none;
+  &:last-of-type {
+    font-size: 0;
   }
 }
 
@@ -25,12 +29,20 @@
   height: 40px;
 
   fill: #666666;
+
+  &:hover {
+    fill: @bg-yelloy-green;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .copyright {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
+    padding-top: 20px;
+  }
+
+  .copyright__link {
+    :last-of-type {
+      margin-left: 52px;
+    }
   }
 }
