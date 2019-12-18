@@ -1,6 +1,6 @@
 .example {
   padding-top: 37px;
-  padding-bottom: 38px;
+  padding-bottom: 37px;
   background-color: @bg-grey;
 }
 
@@ -78,8 +78,10 @@
 }
 
 .example__summary {
-  margin-left: 45px;
-  margin-bottom: 34px;
+  margin-top: 23px;
+  margin-right: 20px;
+  margin-bottom: 11px;
+  margin-left: 48px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
@@ -89,20 +91,20 @@
 @media (min-width: @tablet-width) {
   .example {
     padding-top: 50px;
-    padding-bottom: 77px;
-    background-image: linear-gradient(to bottom, #ffffff 61%, #f2f2f2 39%);
+    padding-bottom: 70px;
+    background-image: linear-gradient(to bottom, #ffffff 57%, #f2f2f2 43%);
   }
 
   .example__title {
     font-size: 60px;
-    margin-bottom: 88px;
+    margin-bottom: 86px;
     padding-left: 4px;
   }
 
   .example__text {
     width: 708px;
-    margin-bottom: 42px;
-    padding-left: 0;
+    margin-bottom: 38px;
+    padding-left: 3px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -110,7 +112,7 @@
   .example__stats-list-box {
     justify-content: flex-start;
     width: 708px;
-    margin-bottom: 62px;
+    margin-bottom: 74px;
     padding: 0;
   }
 
@@ -150,6 +152,7 @@
 
   .example__summary {
     width: 175px;
+    margin-right: 0;
     margin-left: auto;
     font-size: 20px;
     line-height: 20px;
@@ -164,24 +167,33 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    padding-top: 40px;
+    padding-top: 0;
+    padding-bottom: 64px;
+    background-image: linear-gradient(to bottom, #ffffff 28%, #f2f2f2 28%);
+  }
+
+  .example__wrapper {
+    width: 500px;
+    padding-top: 75px;
   }
 
   .example__title {
-    margin-bottom: 164px;
+    margin-bottom: 168px;
   }
 
   .example__text {
-    width: 432px;
+    width: 460px;
     margin-bottom: 56px;
   }
 
   .example__stats-list-box {
-    margin-bottom: 47px;
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .example__summary {
     width: 100%;
+    margin-top: 45px;
     margin-left: 0;
     font-size: 20px;
     line-height: 20px;

@@ -68,20 +68,22 @@
     </section>
     <section class="example">
       <div class="container container--not-padding">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-          Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
-          по-прежнему спит по 16 часов в день.</p>
-        <div class="example__stats-list-box">
-          <dl class="example__stats-list">
-            <dt class="example__stats-value">5 кг</dt>
-            <dd class="example__stats-text example__stats-text--weight">Снижение веса</dd>
-          </dl>
-          <dl class="example__stats-list">
-            <dt class="example__stats-value">60 дней</dt>
-            <dd class="example__stats-text example__stats-text--time">Затрачено времени</dd>
-          </dl>
-          <p class="example__summary">Затраты на питание: <span class="example__cash">15 000 руб.</span></p>
+        <div class="example__wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+            Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+            по-прежнему спит по 16 часов в день.</p>
+          <div class="example__stats-list-box">
+            <dl class="example__stats-list">
+              <dt class="example__stats-value">5 кг</dt>
+              <dd class="example__stats-text example__stats-text--weight">Снижение веса</dd>
+            </dl>
+            <dl class="example__stats-list">
+              <dt class="example__stats-value">60 дней</dt>
+              <dd class="example__stats-text example__stats-text--time">Затрачено времени</dd>
+            </dl>
+            <p class="example__summary">Затраты на питание: <span class="example__cash">15 000 руб.</span></p>
+          </div>
         </div>
         <div class="example__slider slider">
           <div class="slider__inner">
@@ -118,14 +120,11 @@
               </picture>
             </div>
           </div>
-          <input class="visually-hidden" type="radio" id="control-1" name="toggle">
-          <input class="visually-hidden" type="radio" id="control-2" name="toggle" checked>
-          <div class="slider__slider-controls">
-            <label for="control-1">Было</label>
-            <label for="control-2">Стало</label>
+          <div class="slider__slider-label">
+            <a class="slider__link">Было</a>
+            <a class="slider__link">Стало</a>
           </div>
-          <div class="slider__toggle"><span>Серый</span></div>
-          <div class="slider__toggle"><span>Белый</span></div>
+          <div class="slider__toggle"></div>
         </div>
       </div>
     </section>
@@ -168,7 +167,8 @@
       </div>
     </div>
   </footer>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=a3f13a38-e5f4-494a-ab7c-fe5b4e4e3a91&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=a3f13a38-e5f4-494a-ab7c-fe5b4e4e3a91&lang=ru_RU"
+    type="text/javascript"></script>
   <script src="js/svgxuse.js" defer></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/navmenu.js"></script>

@@ -12,8 +12,8 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
-/*
-ymaps.ready(function () {
+
+/*ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
           center: [59.938631, 30.323055],
           zoom: 17
