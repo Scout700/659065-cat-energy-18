@@ -4,6 +4,11 @@
     &:invalid {
       border: 1px solid @dark-gray;
 
+      &::placeholder {
+        color: @color-dark-bluish-black;
+        text-transform: uppercase;
+      }
+
       + .form__icon {
         fill: #222222;
       }
@@ -162,7 +167,7 @@
 
 .form__label {
   position: relative;
-  flex-shrink: 2;
+  flex-shrink: 0;
 
   display: block;
 
@@ -178,7 +183,6 @@
   &--tel,
   &--e-mail {
     padding-left: 0;
-    margin-right: 12px;
   }
 }
 
@@ -226,6 +230,7 @@
 
 .form__text {
   flex-grow: 1;
+  width: 100%;
   padding-top: 14px;
   padding-right: 15px;
   padding-bottom: 14px;
@@ -235,7 +240,7 @@
   border: 1px solid @dark-gray;
 
   &::placeholder {
-    color: @dark-gray;
+    color: @color-dark-bluish-black;
     text-transform: uppercase;
   }
 
