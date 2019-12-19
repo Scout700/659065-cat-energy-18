@@ -1,5 +1,5 @@
 
-.form--not-invalid {
+.form--not-invalid {/*Правило для полей, чтобы показать их первоначальное состояние при загрузке страницы*/
   .form__text {
     &:invalid {
       border: 1px solid @dark-gray;
@@ -163,7 +163,6 @@
   position: relative;
 
   display: block;
-  width: auto;
 
   cursor: pointer;
   user-select: none;
@@ -254,7 +253,7 @@
     }
   }
 
-  &:invalid {
+  &:invalid {/*правило  для полей, не прошедших тест на валидацию, для проверки нужен JS*/
     padding-top: 13px;
     padding-right: 14px;
     padding-bottom: 13px;
