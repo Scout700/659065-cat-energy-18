@@ -10,13 +10,15 @@
   text-decoration: none;
 
   background-color: @bg-yelloy-green;
+  outline: none;
   cursor: pointer;
 
   &:hover {
     background-color: #5eaa2f;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: rgba(255, 255, 255, 0.3);
   }
 
@@ -36,7 +38,8 @@
       background-color: @dark-gray;
     }
 
-    &:active {
+    &:active,
+    &:focus {
       color: rgba(68, 68, 68, 0.3);
     }
   }
@@ -44,7 +47,7 @@
   &--submit {
     width: 280px;
     border: none;
-    margin: 5px 0  22px;
+    margin: 15px 0  22px;
   }
 }
 
@@ -72,6 +75,7 @@
       font-size: 20px;
       margin: 0;
       margin-right: 40px;
+      margin-left: 5px;
       padding: 15px 10px 14px;
     }
   }
@@ -80,7 +84,8 @@
 @media (min-width: @desktop-width) {
   .btn {
     &--preview {
-      margin-left: 16px;
+      padding: 16px 10px 17px;
+      margin-left: 13px;
     }
 
     &--article-item {

@@ -4,7 +4,7 @@
 
 .description__title {
   font-size: 36px;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
   text-align: left;
 }
 
@@ -19,14 +19,14 @@
 
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-left: 82px;
+  padding-left: 79px;
   margin-bottom: 14px;
 
   &::after {
     position: absolute;
     content: "";
-    top: 0;
-    left: 0;
+    top: 4px;
+    left: -1px;
     z-index: 1;
 
     width: 60px;
@@ -84,7 +84,7 @@
 
 @media (min-width: @tablet-width) {
   .description {
-    padding-bottom: 28px;
+    padding-bottom: 32px;
     margin-bottom: 15px;
     border-bottom: 1px solid @dark-gray;
   }
@@ -103,20 +103,20 @@
 
   .description__item {
     width: 250px;
-    padding-top: 141px;
+    padding-top: 142px;
     padding-left: 0;
     padding-bottom: 53px;
     margin-top: 33px;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
     text-align: left;
 
     &:nth-child(odd) {
-      margin-right: 135px;
+      margin-right: 134px;
     }
 
     &::after {
-      top: 28px;
-      left: 0;
+      top: 30px;
+      left: 1px;
 
       width: 80px;
       height: 80px;
@@ -173,14 +173,14 @@
 
   .description__item {
     max-width: 245px;
-    padding-top: 141px;
+    padding-top: 142px;
     margin-right: 80px;
 
     &:nth-child(odd) {
       margin-right: 80px;
     }
 
-    &:last-child {
+    &:nth-child(4n) {
       margin-right: 0;
     }
   }

@@ -1,12 +1,12 @@
 .programms {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .programms__item {
   width: 280px;
-  padding-top: 39px;
+  padding-top: 38px;
   padding-right: 20px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
   padding-left: 20px;
   margin-bottom: 21px;
 
@@ -16,7 +16,7 @@
 .programms__title {
   position: relative;
 
-  padding-left: 71px;
+  padding-left: 70px;
   margin-bottom: 39px;
   font-size: 24px;
   text-transform: uppercase;
@@ -34,8 +34,8 @@
   &::after {
     position: absolute;
     content: "";
-    top: -15px;
-    left: 2px;
+    top: -14px;
+    left: 1px;
     z-index: 1;
 
     width: 50px;
@@ -50,7 +50,7 @@
   &--slim {
     &::before {
       top: -17px;
-      left: 10px;
+      left: 9px;
 
       width: 35px;
       height: 49px;
@@ -74,7 +74,6 @@
 
 .programms__text {
   padding-bottom: 22px;
-  padding-left: 1px;
   margin-bottom: 19px;
   border-bottom: 1px solid @dark-gray;
 }
@@ -82,6 +81,7 @@
 .programms__link {
   position: relative;
 
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -90,10 +90,10 @@
   text-align: left;
   text-transform: uppercase;
 
-  &::after {
+  &::before {
     position: absolute;
     content: "";
-    top: 6px;
+    top: 3px;
     left: 96px;
     z-index: 5;
 
@@ -105,8 +105,9 @@
     background-position: 0 0;
   }
 
-  &:hover {
-    &::after {
+  &:hover,
+  &:focus {
+    &::before {
       width: 34px;
       height: 12px;
 
@@ -123,21 +124,21 @@
   .programms {
     display: flex;
     flex-direction: column;
-    margin-bottom: 39px;
+    margin-bottom: 36px;
   }
 
   .programms__item {
     width: 708px;
-    padding-top: 88px;
+    padding-top: 86px;
     padding-right: 290px;
     padding-bottom: 60px;
     padding-left: 52px;
-    margin-bottom: 27px;
+    margin-bottom: 32px;
   }
 
   .programms__title {
-    margin-bottom: 31px;
-    padding-left: 3px;
+    margin-bottom: 34px;
+    padding-left: 2px;
     font-size: 36px;
     text-transform: uppercase;
 
@@ -147,8 +148,8 @@
     }
 
     &::after {
-      top: 4px;
-      left: 395px;
+      top: 6px;
+      left: 396px;
 
       width: 200px;
       height: 200px;
@@ -156,8 +157,8 @@
 
     &--slim {
       &::before {
-        top: -3px;
-        left: 426px;
+        top: -6px;
+        left: 425px;
 
         width: 141px;
         height: 194px;
@@ -166,8 +167,8 @@
 
     &--pro {
       &::before {
-        top: 50px;
-        left: 360px;
+        top: 49px;
+        left: 361px;
 
         width: 268px;
         height: 113px;
@@ -177,7 +178,7 @@
 
   .programms__text {
     width: 374px;
-    margin-bottom: 38px;
+    margin-bottom: 36px;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -191,9 +192,9 @@
     padding-left: 1px;
     font-size: 20px;
 
-    &::after {
-      top: 9px;
-      left: 124px;
+    &::before {
+      top: 3px;
+      left: 133px;
 
       width: 24px;
       height: 11px;
@@ -204,24 +205,26 @@
 @media (min-width: @desktop-width) {
   .programms {
     flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 67px;
   }
 
   .programms__item {
     width: 570px;
-    padding-top: 81px;
+    padding-top: 85px;
     padding-right: 50px;
-    padding-bottom: 42px;
-    padding-left: 40px;
+    padding-bottom: 62px;
+    padding-left: 51px;
+    margin-bottom: 27px;
 
-    &:first-of-type {
+    &:nth-of-type(odd) {
       margin-right: 80px;
     }
   }
 
   .programms__text {
     width: 465px;
-    margin-bottom: 37px;
+    margin-bottom: 10px;
     border: none;
 
     &--second {
@@ -230,7 +233,7 @@
   }
 
   .programms__title {
-    margin-bottom: 75px;
+    margin-bottom: 84px;
     padding-left: 164px;
 
     &::before {
@@ -239,8 +242,8 @@
     }
 
     &::after {
-      top: -37px;
-      left: 4px;
+      top: -38px;
+      left: 1px;
 
       width: 100px;
       height: 100px;
@@ -249,7 +252,7 @@
     &--slim {
       &::before {
         top: -44px;
-        left: 12px;
+        left: 15px;
 
         width: 71px;
         height: 97px;
@@ -258,8 +261,8 @@
 
     &--pro {
       &::before {
-        top: -17px;
-        left: -16px;
+        top: -16px;
+        left: -17px;
 
         width: 134px;
         height: 57px;
@@ -268,12 +271,12 @@
   }
 
   .programms__link {
-    padding-left: 1px;
+    padding-left: 2px;
     font-size: 20px;
 
-    &::after {
-      top: 6px;
-      left: 134px;
+    &::before {
+      top: 4px;
+      left: 128px;
 
       width: 24px;
       height: 11px;

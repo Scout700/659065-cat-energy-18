@@ -58,7 +58,7 @@
               <label class="form__label" for="set">Набор массы</label>
               <input class="visually-hidden form__radio" id="recommendation" type="radio" name="weight"
                 value="recommendation">
-              <label class="form__label" for="recommendation">Не знаю (Нужен ваш совет)</label>
+              <label class="form__label form__label--radio" for="recommendation">Не знаю (Нужен ваш совет)</label>
             </div>
           </div>
         </fieldset>
@@ -70,12 +70,16 @@
                 <label class="form__label form__label--e-mail" for="email">E-mail:<sup>*</sup></label>
                 <input class="form__text" id="email" type="email" name="email" placeholder="kuklachev@gmail.com"
                   required>
-                <svg class="form__icon" width="17" height="13"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
+                <svg class="form__icon" width="17" height="13">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
               </div>
               <div class="form__wrapper">
                 <label class="form__label form__label--tel" for="tel">Телефон:<sup>*</sup></label>
                 <input class="form__text" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-                <svg class="form__icon" width="17" height="20"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
+                <svg class="form__icon" width="17" height="20">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
               </div>
             </div>
           </div>
@@ -97,7 +101,8 @@
             <label class="form__label" for="milk">Молоко</label>
             <input class="visually-hidden form__checkbox" id="vitamin" type="checkbox" name="vitamin" tabindex="0">
             <label class="form__label" for="vitamin">Витамины</label>
-          </div>
+            <input class="visually-hidden form__checkbox" id="sugar" type="checkbox" name="sugar-substitute"
+              tabindex="0" checked>
         </fieldset>
         <div class="form__block form__block--wrapper">
           <button class="btn btn--submit" type="submit">Отправить заявку</button>
@@ -144,7 +149,8 @@
       </div>
     </div>
   </footer>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=a3f13a38-e5f4-494a-ab7c-fe5b4e4e3a91&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=a3f13a38-e5f4-494a-ab7c-fe5b4e4e3a91&lang=ru_RU"
+    type="text/javascript"></script>
   <script src="js/svgxuse.js" defer></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/navmenu.js"></script>
