@@ -41,7 +41,7 @@
     &::after {
       background-image: url("../img/advantage-leaf@1x.png");
 
-      @media (min-resolution: @retina-dppx) {
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/advantage-leaf@2x.png");
         background-size: 60px auto;
       }
@@ -52,7 +52,7 @@
     &::after {
       background-image: url("../img/advantage-powder@1x.png");
 
-      @media (min-resolution: @retina-dppx) {
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/advantage-powder@2x.png");
         background-size: 60px auto;
       }
@@ -63,7 +63,7 @@
     &::after {
       background-image: url("../img/advantage-dining@1x.png");
 
-      @media (min-resolution: @retina-dppx) {
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/advantage-dining@2x.png");
         background-size: 60px auto;
       }
@@ -74,7 +74,7 @@
     &::after {
       background-image: url("../img/advantage-clock@1x.png");
 
-      @media (min-resolution: @retina-dppx) {
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/advantage-clock@2x.png");
         background-size: 60px auto;
       }
@@ -86,7 +86,6 @@
   .description {
     padding-bottom: 32px;
     margin-bottom: 15px;
-    border-bottom: 1px solid @dark-gray;
   }
 
   .description__title {
@@ -121,7 +120,7 @@
       width: 80px;
       height: 80px;
 
-      @media (min-resolution: @retina-dppx) {
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-size: 80px auto;
       }
     }
