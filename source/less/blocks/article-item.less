@@ -2,11 +2,9 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+
   width: 320px;
-  padding-top: 1px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 23px;
+  padding: 1px 20px 23px;
   border-top: 1px solid @gray;
 
   &:last-child {
@@ -21,7 +19,7 @@
 
       width: 30px;
       height: 2px;
-      background-color: #222222;
+      background-color: @color-dark-black;
 
       opacity: 0.2;
     }
@@ -34,7 +32,7 @@
 
       width: 2px;
       height: 30px;
-      background-color: #222222;
+      background-color: @color-dark-black;
 
       opacity: 0.2;
     }
@@ -126,30 +124,31 @@
 
     &:last-child {
       padding-top: 133px;
-      background-color: #ffffff;
+      background-color: @color-white;
       border: 1px solid @dark-gray;
 
       &::before {
         top: 80px;
         left: 133px;
+
         width: 61px;
         height: 2px;
+
         opacity: 0.5;
       }
 
       &::after {
         top: 52px;
         left: 161px;
+
         width: 2px;
         height: 61px;
+
         opacity: 0.5;
       }
 
       .article-item__link-title {
-        padding-top: 32px;
-        padding-right: 76px;
-        padding-bottom: 20px;
-        padding-left: 76px;
+        padding: 32px 76px 20px;
       }
     }
 
@@ -159,14 +158,13 @@
   }
 
   .article-item__link-image {
-    height: 208px;
-    width: 100%;
     display: flex;
     align-items: flex-end;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: -82px;
-    margin-bottom: 8px;
+
+    width: 100%;
+    height: 208px;
+    margin: -82px 0 8px;
+
     text-align: center;
   }
 
@@ -180,10 +178,7 @@
   }
 
   .article-item__link-title {
-    padding-top: 32px;
-    padding-right: 55px;
-    padding-bottom: 19px;
-    padding-left: 55px;
+    padding: 32px 55px 19px;
     font-size: 20px;
     text-align: center;
   }
@@ -245,8 +240,7 @@
       }
 
       .article-item__link-title {
-        padding-right: 40px;
-        padding-left: 40px;
+        padding: 29px 40px 13px;
       }
     }
   }
@@ -254,7 +248,7 @@
   .article-item__text {
     padding: 0 15px;
     margin-top: 13px;
-    margin-bottom: 76px;
+    margin-bottom: 85px;
   }
 
   .article-item__box {
@@ -262,10 +256,7 @@
   }
 
   .article-item__link-title {
-    padding-top: 27px;
-    padding-right: 8px;
-    padding-bottom: 22px;
-    padding-left: 8px;
+    padding: 27px 8px 22px;
   }
 
   .article-item__table {

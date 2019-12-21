@@ -31,7 +31,7 @@
   margin-bottom: 30px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  color: #222222;
+  color: @color-dark-black;
   text-align: left;
   text-transform: uppercase;
 }
@@ -73,6 +73,7 @@
 
 .form__legend {
   position: relative;
+
   margin-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
@@ -80,7 +81,7 @@
   line-height: 24px;
   text-transform: none;
   color: @color-black;
-  background-color: #ffffff;
+  background-color: @color-white;
 
   &--size {
     width: 225px;
@@ -170,14 +171,10 @@
   flex-shrink: 0;
 
   display: block;
+  padding: 12px 18px 12px 46px;
 
   cursor: pointer;
   user-select: none;
-
-  padding-top: 12px;
-  padding-right: 18px;
-  padding-bottom: 12px;
-  padding-left: 46px;
 
   &--user,
   &--tel,
@@ -194,9 +191,9 @@
 
   width: 12px;
   height: 21px;
-
-  border-bottom: 2px solid @bg-yelloy-green;
   border-right: 2px solid @bg-yelloy-green;
+  border-bottom: 2px solid @bg-yelloy-green;
+
   transform: rotate(45deg);
 }
 
@@ -232,17 +229,14 @@
   flex-grow: 1;
   width: 100%;
   margin-right: 1px;
-  padding-top: 14px;
-  padding-right: 5px;
-  padding-bottom: 14px;
-  padding-left: 15px;
-  text-transform: uppercase;
-  outline: none;
+  padding: 14px 5px;
   color: @color-dark-bluish-black;
   border: 1px solid @dark-gray;
+  text-transform: uppercase;
+
+  outline: none;
 
   &::placeholder {
-
     text-transform: uppercase;
   }
 
@@ -251,10 +245,7 @@
   }
 
   &:focus {
-    padding-top: 13px;
-    padding-right: 14px;
-    padding-bottom: 13px;
-    padding-left: 14px;
+    padding: 13px 14px;
     border: 2px solid @color-dark-bluish-black;
 
     + .form__icon {
@@ -263,10 +254,7 @@
   }
 
   &:invalid {/*правило  для полей, не прошедших тест на валидацию, для проверки нужен JS*/
-    padding-top: 13px;
-    padding-right: 14px;
-    padding-bottom: 13px;
-    padding-left: 14px;
+    padding: 13px 14px;
     border: 2px solid #ff8282;
 
     + .form__icon {
@@ -278,12 +266,10 @@
 .form__message {
   width: 280px;
   min-height: 150px;
+  margin: 15px 20px 28px;
   padding: 12px;
-  margin-top: 15px;
-  margin-right: 20px;
-  margin-bottom: 28px;
-  margin-left: 20px;
   border: 1px solid @dark-gray;
+
   outline: none;
   resize: none;
 
@@ -331,10 +317,7 @@
   }
 
   .form__text {
-    padding-top: 13px;
-    padding-right: 20px;
-    padding-bottom: 9px;
-    padding-left: 20px;
+    padding: 13px 20px 9px;
 
     &:invalid,
     &:active,
@@ -350,10 +333,10 @@
   }
 
   .form__legend {
-    padding-left: 40px;
-    padding-right: 43px;
     margin-bottom: 80px;
     margin-left: -37px;
+    padding-left: 40px;
+    padding-right: 43px;
     font-size: 36px;
 
     &--size {
@@ -367,18 +350,12 @@
   }
 
   .form__label {
-    padding-top: 19px;
-    padding-right: 0;
-    padding-bottom: 16px;
-    padding-left: 60px;
+    padding: 19px 0 16px 60px;
 
     &--user,
     &--tel,
     &--e-mail {
-      padding-top: 16px;
-      padding-bottom: 15px;
-      padding-left: 5px;
-      margin-right: 20px;
+      padding: 16px 20px 15px 5px;
     }
   }
 
@@ -405,10 +382,7 @@
     }
 
     &--border {
-      padding-top: 16px;
-      padding-right: 25px;
-      padding-bottom: 19px;
-      padding-left: 28px;
+      padding: 16px 25px 19px 28px;
       margin-bottom: 39px;
 
       .form__label {
@@ -522,10 +496,7 @@
   }
 
   .form__text {
-    padding-top: 8px;
-    padding-right: 25px;
-    padding-bottom: 8px;
-    padding-left: 25px;
+    padding: 8px 25px;
 
     &:invalid,
     &:active,
@@ -570,12 +541,9 @@
     }
 
     &--border {
-      padding-top: 14px;
-      padding-right: 25px;
-      padding-bottom: 2px;
-      padding-left: 25px;
       margin: 0;
       margin-bottom: 20px;
+      padding: 14px 25px 2px;
 
       .form__label {
         width: 520px;

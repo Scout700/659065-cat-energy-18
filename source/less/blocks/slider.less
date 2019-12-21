@@ -32,7 +32,7 @@
     width: 84px;
     height: 14px;
 
-    background-color: #ffffff;
+    background-color: @color-white;
     border: 1px solid @gray;
     border-radius: 6px;
   }
@@ -76,8 +76,6 @@
     padding-left: 69px;
 
     &::before {
-      position: absolute;
-      content: "";
       left: 143px;
       bottom: 13px;
 
@@ -117,13 +115,13 @@
 
   .slider__toggle {
     position: absolute;
-    bottom: 0;
-    left: 340px;
+    bottom: -2px;
+    left: 338px;
     content: "";
 
     width: 33px;
     height: 33px;
-    background-color: #ffffff;
+    background-color: @color-white;
     border: solid 1px @gray;
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -132,8 +130,9 @@
     &::after {
       position: absolute;
       bottom: 12px;
-      left: 12px;
+      left: 11px;
       content: "";
+      z-index: 2;
 
       width: 8px;
       height: 8px;
@@ -148,6 +147,7 @@
     }
 
     &:active {
+      border: 2px solid @bg-yelloy-green;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
   }
@@ -155,7 +155,7 @@
 
 @media (min-width: @desktop-width) {
   .slider__inner {
-    margin-bottom: 40px;
+    margin-bottom: 43px;
   }
 
   .slider__slider-label {

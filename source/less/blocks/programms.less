@@ -4,13 +4,10 @@
 
 .programms__item {
   width: 280px;
-  padding-top: 38px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  margin-bottom: 21px;
+  padding: 38px 20px 20px;
+  margin-bottom: 20px;
 
-  background-color: #f2f2f2;
+  background-color: @bg-grey;
 }
 
 .programms__title {
@@ -20,16 +17,6 @@
   margin-bottom: 39px;
   font-size: 24px;
   text-transform: uppercase;
-
-  &::before {
-    position: absolute;
-    content: "";
-
-    z-index: 5;
-
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
 
   &::after {
     position: absolute;
@@ -43,6 +30,15 @@
     border-radius: 50%;
 
     background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 5;
+
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -86,7 +82,7 @@
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
-  color: #111111;
+  color: @color-black;
   text-align: left;
   text-transform: uppercase;
 
@@ -129,11 +125,8 @@
 
   .programms__item {
     width: 708px;
-    padding-top: 86px;
-    padding-right: 290px;
-    padding-bottom: 60px;
-    padding-left: 52px;
     margin-bottom: 32px;
+    padding: 86px 290px 60px 52px;
   }
 
   .programms__title {
@@ -141,11 +134,6 @@
     padding-left: 2px;
     font-size: 36px;
     text-transform: uppercase;
-
-    &::before {
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
 
     &::after {
       top: 6px;
@@ -211,11 +199,8 @@
 
   .programms__item {
     width: 570px;
-    padding-top: 85px;
-    padding-right: 50px;
-    padding-bottom: 62px;
-    padding-left: 51px;
     margin-bottom: 27px;
+    padding: 85px 50px 62px 51px;
 
     &:nth-of-type(odd) {
       margin-right: 80px;
@@ -236,10 +221,6 @@
     margin-bottom: 84px;
     padding-left: 164px;
 
-    &::before {
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
 
     &::after {
       top: -38px;
@@ -272,7 +253,6 @@
 
   .programms__link {
     padding-left: 2px;
-    font-size: 20px;
 
     &::before {
       top: 4px;

@@ -32,7 +32,7 @@
   font-size: 16px;
   line-height: 16px;
   text-align: left;
-  color: #222222;
+  color: @color-dark-black;
   text-transform: uppercase;
 }
 
@@ -71,10 +71,7 @@
 
   .additional-goods__item {
     width: 708px;
-    padding-top: 25px;
-    padding-right: 38px;
-    padding-bottom: 26px;
-    padding-left: 37px;
+    padding: 25px 38px 26px 37px;
     margin-bottom: -1px;
 
     border: 1px solid @gray;
@@ -128,19 +125,17 @@
 
 @media (min-width: @desktop-width) {
   .additional-goods {
-    margin-bottom: 85px;
     margin-right: 0;
+    margin-bottom: 85px;
     margin-left: 0;
   }
 
   .additional-goods__item {
     flex-direction: row;
     justify-content: space-between;
+
     width: 895px;
-    padding-top: 15px;
-    padding-right: 0;
-    padding-bottom: 16px;
-    padding-left: 0;
+    padding: 15px 0 16px;
     margin-bottom: 0;
     border: none;
     border-bottom: 1px solid @gray;
